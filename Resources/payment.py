@@ -81,3 +81,5 @@ class PaymentResource(Resource):
             return make_response(jsonify({"error": "Unable to process STK push", "details": response.json()}), 400)
 
 payment_ns.add_resource(PaymentResource, '/sendSTKPush')
+
+     
